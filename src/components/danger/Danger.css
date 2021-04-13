@@ -1,0 +1,25 @@
+.app__title {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+}
+.app__deleted{
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.app__del{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.opacity_app {
+    opacity: 0.5;
+}
+.app__dangers h6 {
+    text-align: center;
+}
