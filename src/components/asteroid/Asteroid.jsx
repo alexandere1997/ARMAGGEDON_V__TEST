@@ -7,8 +7,7 @@ export default class Asteroid extends Component {
     state = {
         forArr: null,
         chek: false,
-        dKm: true,
-        array: this.props.mass
+        dKm: true
     }
 
     clickDanger = (e) => {
@@ -34,16 +33,6 @@ export default class Asteroid extends Component {
             }
         })
     }
-
-    componentDidMount = () => {
-        const {mass} = this.props;
-        this.setState(() => {
-            return {
-                array: mass
-            }
-        })
-    }
-
 
     render() {
         const {mass} = this.props;

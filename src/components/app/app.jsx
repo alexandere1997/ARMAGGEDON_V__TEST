@@ -17,7 +17,6 @@ export default class App extends Component {
         getResourse("https://www.neowsapp.com/rest/v1/feed?start_date=2020-09-07&end_date=2020-09-14&detailed=false&api_key=hYJWSsIgwKGIjtwiObnXmIokVNpDO8jkYIJ15FbE")
         .then(res => {
             let arr = [];
-            let arr__two = [];
             Object.keys(res.near_earth_objects).map((keyName, i) => {
                 Object.keys(res.near_earth_objects[keyName]).map((items, i) => {
                     arr.push(res.near_earth_objects[keyName][items])
@@ -25,7 +24,6 @@ export default class App extends Component {
             })
             this.setState({
                 arrayAster: arr,
-                arrayAsterTWo: arr__two
             })
 
         });
